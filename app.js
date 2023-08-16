@@ -56,8 +56,9 @@ function getNumbers(innRound) {
     round++;
     delayedLoop();
     setTimeout(function() {
-        answer();
-    }, (round*1000 + 1000));
+        let aprompt = "Type the numbers you saw in order without any spaces inbetween."
+        answer(aprompt);
+    }, (round*1000 + 1100));
 }
 
 // setIntervals randomly printing a number and adding that number to gameString. Stops when iteration equals round. Set to go off every 1000ms.
@@ -70,6 +71,7 @@ function delayedLoop() {
             flash();
             gameString = gameString + x.toString();
         } else {
+            iD("memory_line").innerHTML = "&nbsp;";
             clearTimeout(timerId);
             iteration = 0;
         }
