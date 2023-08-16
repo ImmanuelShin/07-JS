@@ -58,7 +58,7 @@ function getNumbers(innRound) {
     delayedLoop();
     setTimeout(function() {
         answer(aprompt);
-    }, (round*1000 + 1100));
+    }, (round*1000 + 1500));
 }
 
 // setIntervals randomly printing a number and adding that number to gameString. Stops when iteration equals round. Set to go off every 1000ms.
