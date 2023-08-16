@@ -53,10 +53,10 @@ function rng() {
 
 // Starts the memory game. Calls delayedLoop() whilst timeout calling answer(). The timeout is synced to the current round. The greater the round, the more numbers that need to be printed, the longer answer() has to wait.
 function getNumbers(innRound) {
+    let aprompt = "Type the numbers you saw in order without any spaces inbetween."
     round++;
     delayedLoop();
     setTimeout(function() {
-        let aprompt = "Type the numbers you saw in order without any spaces inbetween."
         answer(aprompt);
     }, (round*1000 + 1100));
 }
